@@ -1,8 +1,10 @@
 user_choice = None
+RED = "\033[31m"
+RESET = "\033[0m"
 story = """
 Your name is Ruth, your a grade 11 girl who went to get groceries for your family
 
-You are at the store on her bicycle, when she hears police sirens.
+You are at the Walmart, when she hears police sirens.
 
 A voice comes over the intercom:
 
@@ -60,16 +62,82 @@ if user_choice == "a":
     
     Now's your chance
     
-    You quickly run to the counter, grab Bethany's medicine and on your way back the shooter spots
+    You quickly run to the counter, grab Bethany's medicine and on your way back you trip, the shooter notices you, and
+    approaches you slowly, gun's drawn
+    
+    You have 2 options
+    
+    C.  You try to tell him the situation with Bethany
+    
+    D.  You tell him you felt like throwing up and couldn't find a bin
     
     
     """
     print(story)
 
+user_choice = input()
+user_choice = user_choice.lower()
+
+if user_choice == "c":
+    story = f"""
+He feels pity for her , takes the medicine from you, and goes to Jim, gives him the medication.
+
+He forces you to stay back there, and warns you not to pull that crap again
+
+Finally, Bethany is feeling weak, but fortunately she is stable
+
+You feel okay, and after a few minutes later, you found a opening on a door right next to the pharmacy
+
+You tell Jim about it and you guys agree to escape through there
+
+Unbeknownst to you, someone heard about your escape plan...
+
+You, Jim carrying Bethany sneak your way through the pharmacy, but the person who heard your escape plan told the other
+bystanders
+
+Suddenly everyone running towards the door, which obviously alerts the shooter, and since Jim's carrying Bethany
+hes at the back of  the crowd
+
+You luckily make it out, but then you turn around, you see a glimpse of Jim smiling, but with all the running, you get
+pushed
+
+You hear gunshots, quickly turn around, you see an arm on the ground next to a pool of {RED}blood{RESET}
+
+You cant make it out who it is, but deep in your heart you know
+
+Police bursts in!
+
+Bang Bang Bang
+
+The Shooter is down! The Shooter is {RED}DOWN{RESET}
+
+THE END (click run to restart)
+
+    """
+    print(story)
+
+    user_choice = input()
+    user_choice = user_choice.lower()
+
+if user_choice == "d":
+    story = f"""
+ {RED}You are the SHOOTER{RESET}
+
+FLASHBACK: you were just released from jail after serving 4 years for selling drugs
+
+Hoping to make amends with your girl-friend, you step into her house porch, about to 
+knock on the door but somethings different
+
+A sign on her door says happily married, you got so filled with emotion, you dumped the flowers you were about to give
+her in front of her door
+
+Few days later, your stalking the "husband" and notice a every Friday he goes to Walmart to
+    """
+
 if user_choice == "b":
-    story = """
-   You run as fast as you can and then you feel a sharp pain in your leg, the shoter has decided to make you an example
-   He slowly creeps up on you, Then bang-
+    story = f"""
+   You run as fast as you can and then you feel a sharp pain in your leg, the shooter has decided to make you an example
+   He slowly creeps up on you, Then {RED}BANG-{RESET}
    
    THE END (click run to restart)
     """
