@@ -131,7 +131,19 @@ knock on the door but somethings different
 A sign on her door says happily married, you got so filled with emotion, you dumped the flowers you were about to give
 her in front of her door
 
-Few days later, your stalking the "husband" and notice a every Friday he goes to Walmart to
+Few days later, your stalking the "husband" and notice a every Friday he goes to Walmart to get groceries
+
+3 Fridays later, you finally realise his pattern.
+
+This Friday, you came prepared
+
+Got in the Walmart, Shoot the husband, a get in-get out job
+
+Nonetheless, the plan failed
+
+WYou saw the husband and shot him from a far away distance, Unluckily, you hit a tomato paste can.
+
+With that shot everyone ran, you lost the husband for a bit but its okay
     """
 
 if user_choice == "b":
