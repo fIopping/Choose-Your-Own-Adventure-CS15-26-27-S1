@@ -25,4 +25,3 @@ if user_choice == "b":
         print_colored_messages()
 
 
-{RED}hhjd{RESET}

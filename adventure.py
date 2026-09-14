@@ -121,7 +121,7 @@ THE END (click run to restart)
 
 if user_choice == "d":
     story = f"""
- {RED}You are the SHOOTER{RESET}
+ {RED}You are the SHOOTER - PAST{RESET}
 
 FLASHBACK: you were just released from jail after serving 4 years for selling drugs
 
@@ -141,9 +141,71 @@ Got in the Walmart, Shoot the husband, a get in-get out job
 
 Nonetheless, the plan failed
 
-WYou saw the husband and shot him from a far away distance, Unluckily, you hit a tomato paste can.
+You saw the husband and shot him from a far away distance, Unluckily, you hit a tomato paste can.
 
 With that shot everyone ran, you lost the husband for a bit but its okay
+
+Cause you know he is in the store
+
+But with many people running around, you cant focus
+
+So you lock the doors
+
+And this leads you to here...
+
+{RED}PRESENT{RESET}
+
+You see the girl (Ruby) walking past, gun drawn, you ask her what shes doing out here
+
+She tells you she felt like throwing up and went to the bin
+
+You dont trust her but you have bigger issues
+
+You take her back to the wall
+
+Then go to the place she claims to have felt like throwing up, nothing seems to be suspicious
+
+Your about to leave that spot until, you feel a breeze.
+
+A door's opened
+
+You need to lock that door, but your afraid its a trap by the police.
+
+So you grab a Walmart employee, and demnand her to lock the door
+
+Before she does, you threaten her life, with a gun drawn to her back, so she doesnt try to run away.
+
+She successfully locks the door
+
+You take her to the wall
+
+But, Suddenly you hear a police megaphone, they have come to make a deal
+
+You have 2 options
+
+E. Accept the deal
+
+F. Decline the deal
+    """
+print(story)
+
+user_choice = input()
+user_choice = user_choice.lower()
+
+
+if user_choice == "e":
+    story = """
+The deal was release 10 hostages for food and water
+
+You realise this deal is smart, because it lures out the husband. 
+
+Luckily enough, the megaphone can be heard in all parts of the store
+
+You then yell out = "It's better to come out from your hiding spots now so you have a chance to escape
+
+Then people start coming out including the husband, you are not gonna get him yet as you have something big planned
+
+
     """
 
 if user_choice == "b":
