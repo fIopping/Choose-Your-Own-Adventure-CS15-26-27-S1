@@ -16,10 +16,10 @@ Turns out there was a shooter
 
 A few seconds later, another announcement follows:
 
-"We are coming in, Drop your weapon!"
-
 As scared as you are in the store, you try to get out of the store.
 Suddenly! the store door closes
+
+"We are coming in, Drop your weapon!"
 
 Five minutes later, the police are trying to enter the door but turns out its bulletproof.
 
@@ -187,6 +187,7 @@ E. Accept the deal
 
 F. Decline the deal
     """
+
 print(story)
 
 user_choice = input()
@@ -210,9 +211,25 @@ Then people start coming out including the husband, you are not gonna get him ye
 
 if user_choice == "b":
     story = f"""
-   You run as fast as you can and then you feel a sharp pain in your leg, the shooter has decided to make you an example
-   He slowly creeps up on you, Then {RED}BANG-{RESET}
+   You run as fast as you can and then you feel a sharp pain in your leg.
    
-   THE END (click run to restart)
+   You fall, but your smart enough to dodge, and hide behind a shelf 
+   
+   You know you cant stay there for so long
+   
+   You have 2 options
+   
+   R. Use all your energy to the nearest exit (the pharmacy exit door)
+   
+   S. Surrender
     """
-    print(story)
+
+print(story)
+
+user_choice = input()
+user_choice = user_choice.lower()
+
+if user_choice == "r":
+    story = """
+
+"""
