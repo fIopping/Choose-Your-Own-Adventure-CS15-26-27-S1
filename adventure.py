@@ -1,32 +1,32 @@
-user_choice = None
 RED = "\033[31m"
 RESET = "\033[0m"
+
 story = """
 Your name is Ruth, your a grade 11 girl who went to get groceries for your family
 
-You are at the Walmart, when she hears police sirens.
+You are at the Walmart, when she hears police sirens
 
 A voice comes over the intercom:
 
-"Attention. Come out with your hands up. Slowly!."
+"Attention Come out with your hands up Slowly!"
 
-The store is silent.
+The store is silent
 
 Turns out there was a shooter
 
 A few seconds later, another announcement follows:
 
-As scared as you are in the store, you try to get out of the store.
+As scared as you are in the store, you try to get out of the store
 Suddenly! the store door closes
 
 "We are coming in, Drop your weapon!"
 
-Five minutes later, the police are trying to enter the door but turns out its bulletproof.
+Five minutes later, the police are trying to enter the door but turns out its bulletproof
 
-Then 3 shots fire, Pow! Pow! Pow!.
+Then 3 shots fire, Pow! Pow! Pow!
 That was a warning shot, but you still can not see the shooter
 
-Then suddenly her phone rings, Its your mum.
+Then suddenly her phone rings, Its your mum
 
 You quickly answer the phone and reduces the volume as low as she can, and before her mum could even speak, a loading-
 sound from a gun, rings next to her ear, its the shooter
@@ -48,188 +48,136 @@ if user_choice == "a":
     story = """
     He shoots the phone right in front of you and forces you to the back of the store with the other shoppers
     You then meet an old elderly couple named Jim and Bethany, Jim explains to you, that they came there to go get 
-    Bethany's seizure medicine, till they was forced to stay back there.
-    
+    Bethany's seizure medicine, till they was forced to stay back there
+
     You can relate-
-    
-    Suddenly, Bethany starts violently shaking, she is seizing.
-    
+
+    Suddenly, Bethany starts violently shaking, she is seizing
+
     You try calming her down by keeping her still but to no avail, it didnt work
-    
+
     But something orange and small catches your eye, Its Bethany's seizure medicine, but its by the pharmacy counter
-    
+
     But the shooter has his back turned
-    
+
     Now's your chance
-    
+
     You quickly run to the counter, grab Bethany's medicine and on your way back you trip, the shooter notices you, and
     approaches you slowly, gun's drawn
-    
+
     You have 2 options
-    
-    C.  You try to tell him the situation with Bethany
-    
-    D.  You tell him you felt like throwing up and couldn't find a bin
-    
-    
-    """
-    print(story)
 
-user_choice = input()
-user_choice = user_choice.lower()
+    C : You try to tell him the situation with Bethany
 
-if user_choice == "c":
-    story = f"""
-He feels pity for her , takes the medicine from you, and goes to Jim, gives him the medication.
-
-He forces you to stay back there, and warns you not to pull that crap again
-
-Finally, Bethany is feeling weak, but fortunately she is stable
-
-You feel okay, and after a few minutes later, you found a opening on a door right next to the pharmacy
-
-You tell Jim about it and you guys agree to escape through there
-
-Unbeknownst to you, someone heard about your escape plan...
-
-You, Jim carrying Bethany sneak your way through the pharmacy, but the person who heard your escape plan told the other
-bystanders
-
-Suddenly everyone running towards the door, which obviously alerts the shooter, and since Jim's carrying Bethany
-hes at the back of  the crowd
-
-You luckily make it out, but then you turn around, you see a glimpse of Jim smiling, but with all the running, you get
-pushed
-
-You hear gunshots, quickly turn around, you see an arm on the ground next to a pool of {RED}blood{RESET}
-
-You cant make it out who it is, but deep in your heart you know
-
-Police bursts in!
-
-Bang Bang Bang
-
-The Shooter is down! The Shooter is {RED}DOWN{RESET}
-
-THE END (click run to restart)
-
+    D : You try to sneak back through the aisles with Jim and leave Bethany behind
     """
     print(story)
 
     user_choice = input()
     user_choice = user_choice.lower()
 
-if user_choice == "d":
-    story = f"""
- {RED}You are the SHOOTER - PAST{RESET}
+    if user_choice == "c":
+        story = """
+        He approaches you with his gun drawn What do you do?
 
-FLASHBACK: you were just released from jail after serving 4 years for selling drugs
+        E : Freeze under the shelf and stay completely silent
 
-Hoping to make amends with your girl-friend, you step into her house porch, about to 
-knock on the door but somethings different
+        F : Panic, bolt upright, and try to run away
+        """
+        print(story)
 
-A sign on her door says happily married, you got so filled with emotion, you dumped the flowers you were about to give
-her in front of her door
+        user_choice = input()
+        user_choice = user_choice.lower()
 
-Few days later, your stalking the "husband" and notice a every Friday he goes to Walmart to get groceries
+        if user_choice == "e":
+            story = "The shooter walks past you. You save Bethany with the medicine. SWAT breaches, and you, Jim, Bethany, and surviving shoppers escape together!"
+            print(story)
 
-3 Fridays later, you finally realise his pattern.
+        if user_choice == "f":
+            story = f"The shooter shoots and {RED}kills you instantly{RESET}. Jim manages to wheel Bethany with the help of other shoppers through the back exit while the shooter is distracted"
+            print(story)
 
-This Friday, you came prepared
+    if user_choice == "d":
+        story = """
+        You try to help Jim move toward the back loading dock. Another shopper is nearby
+        What happens next?
 
-Got in the Walmart, Shoot the husband, a get in-get out job
+        G : The other hidden shopper panics, screams out your location 
 
-Nonetheless, the plan failed
+        H : You slip through the back loading-dock door, and escape together without making noise
+        """
+        print(story)
 
-You saw the husband and shot him from a far away distance, Unluckily, you hit a tomato paste can.
+        user_choice = input()
+        user_choice = user_choice.lower()
 
-With that shot everyone ran, you lost the husband for a bit but its okay
+        if user_choice == "g":
+            story = f"You are betrayed by the shopper, and the shooter {RED}kills you execution-style{RESET} while the coward survives"
+            print(story)
 
-Cause you know he is in the store
-
-But with many people running around, you cant focus
-
-So you lock the doors
-
-And this leads you to here...
-
-{RED}PRESENT{RESET}
-
-You see the girl (Ruby) walking past, gun drawn, you ask her what shes doing out here
-
-She tells you she felt like throwing up and went to the bin
-
-You dont trust her but you have bigger issues
-
-You take her back to the wall
-
-Then go to the place she claims to have felt like throwing up, nothing seems to be suspicious
-
-Your about to leave that spot until, you feel a breeze.
-
-A door's opened
-
-You need to lock that door, but your afraid its a trap by the police.
-
-So you grab a Walmart employee, and demnand her to lock the door
-
-Before she does, you threaten her life, with a gun drawn to her back, so she doesnt try to run away.
-
-She successfully locks the door
-
-You take her to the wall
-
-But, Suddenly you hear a police megaphone, they have come to make a deal
-
-You have 2 options
-
-E. Accept the deal
-
-F. Decline the deal
-    """
-
-print(story)
-
-user_choice = input()
-user_choice = user_choice.lower()
-
-
-if user_choice == "e":
-    story = """
-The deal was release 10 hostages for food and water
-
-You realise this deal is smart, because it lures out the husband. 
-
-Luckily enough, the megaphone can be heard in all parts of the store
-
-You then yell out = "It's better to come out from your hiding spots now so you have a chance to escape
-
-Then people start coming out including the husband, you are not gonna get him yet as you have something big planned
-
-
-    """
+        if user_choice == "h":
+            story = f"You, Jim, and Bethany, and others escape together into the parking lot! However, a slow shopper gets caught in the crossfire and {RED}dies{RED}"
+            print(story)
 
 if user_choice == "b":
     story = f"""
-   You run as fast as you can and then you feel a sharp pain in your leg.
-   
+   You run as fast as you can and then you feel a sharp pain in your leg
+
    You fall, but your smart enough to dodge, and hide behind a shelf 
-   
+
    You know you cant stay there for so long
-   
+
    You have 2 options
-   
-   R. Use all your energy to the nearest exit (the pharmacy exit door)
-   
-   S. Surrender
+
+   R : Use all your energy to the nearest exit (the pharmacy exit door)
+
+   S : Surrender
     """
+    print(story)
 
-print(story)
+    user_choice = input()
+    user_choice = user_choice.lower()
 
-user_choice = input()
-user_choice = user_choice.lower()
+    if user_choice == "r":
+        story = """
+        You reach the pharmacy exit door, but it is jammed tight, but the shooters nearby
+        What do you do?
 
-if user_choice == "r":
-    story = """
+        T : Smash the glass fire-alarm box next to the door to force the automatic locks open
 
-"""
+        U : Hide in a nearby storage locker instead
+        """
+        print(story)
+
+        user_choice = input()
+        user_choice = user_choice.lower()
+
+        if user_choice == "t":
+            f"You somehow escape"
+            print(story)
+
+        if user_choice == "u":
+            story = f"You lock yourself in the locker. The shooter finds it, forces it open, and {RED}executes you{RED}. No one escapes"
+            print(story)
+
+    if user_choice == "s":
+        story = """
+        You surrender and the shooter captures you alive, using you as a human shield
+        Police finally storm the store! What do you do?
+
+        V : Try to trip the shooter in the chaos to help the police
+
+        W : Obey the shooter completely and stay still to save your own skin
+        """
+        print(story)
+
+        user_choice = input()
+        user_choice = user_choice.lower()
+
+        if user_choice == "v":
+            story = f"Police breach and you trip him. You escape safely, but a stray bullet hits a hostage who {RED}dies{RED} in the crossfire"
+            print(story)
+
+        if user_choice == "w":
+            story = f"You stay completely still. During the final SWAT raid, a stray bullet {RED}kills you{RESET}, and the shooter is finally arrested"
+            print(story)

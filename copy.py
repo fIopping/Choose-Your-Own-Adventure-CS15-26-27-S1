@@ -1,3 +1,5 @@
+from adventure import user_choice
+
 if user_choice == "b":
     story = """
 
