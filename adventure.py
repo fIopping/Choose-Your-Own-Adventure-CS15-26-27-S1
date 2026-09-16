@@ -92,10 +92,12 @@ if user_choice == "a":
         if user_choice == "e":
             story = "The shooter walks past you. You save Bethany with the medicine. SWAT breaches, and you, Jim, Bethany, and surviving shoppers escape together!"
             print(story)
+            exit()
 
         if user_choice == "f":
             story = f"The shooter shoots and {RED}kills you instantly{RESET}. Jim manages to wheel Bethany with the help of other shoppers through the back exit while the shooter is distracted"
             print(story)
+            exit()
 
     if user_choice == "d":
         story = """
@@ -112,12 +114,14 @@ if user_choice == "a":
         user_choice = user_choice.lower()
 
         if user_choice == "g":
-            story = f"You are betrayed by the shopper, and the shooter {RED}kills you execution-style{RESET} while the coward survives"
+            story = f"You are betrayed by the shopper, and the shooter {RED}kills you execution-style{RESET} while the shopper survives"
             print(story)
+            exit()
 
         if user_choice == "h":
-            story = f"You, Jim, and Bethany, and others escape together into the parking lot! However, a slow shopper gets caught in the crossfire and {RED}dies{RED}"
+            story = f"You, Jim, and Bethany, and others escape together into the parking lot! However, a slow shopper gets caught in the crossfire and {RED}dies{RESET}"
             print(story)
+            exit()
 
 if user_choice == "b":
     story = f"""
@@ -155,10 +159,12 @@ if user_choice == "b":
         if user_choice == "t":
             f"You somehow escape"
             print(story)
+            exit()
 
         if user_choice == "u":
-            story = f"You lock yourself in the locker. The shooter finds it, forces it open, and {RED}executes you{RED}. No one escapes"
+            story = f"You lock yourself in the locker. The shooter finds it, forces it open, and {RED}executes you{RESET}. No one escapes"
             print(story)
+            exit()
 
     if user_choice == "s":
         story = """
@@ -175,9 +181,11 @@ if user_choice == "b":
         user_choice = user_choice.lower()
 
         if user_choice == "v":
-            story = f"Police breach and you trip him. You escape safely, but a stray bullet hits a hostage who {RED}dies{RED} in the crossfire"
+            story = f"Police breach and you trip him. You escape safely, but a stray bullet hits a hostage who {RED}dies{RESET} in the crossfire"
             print(story)
+            exit()
 
         if user_choice == "w":
             story = f"You stay completely still. During the final SWAT raid, a stray bullet {RED}kills you{RESET}, and the shooter is finally arrested"
             print(story)
+            exit()

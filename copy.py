@@ -25,11 +25,3 @@ if user_choice == "b":
 
     if __name__ == "__main__":
         print_colored_messages()
-
-
-
-
-
-
-
-
